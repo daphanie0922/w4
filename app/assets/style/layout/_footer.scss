@@ -1,0 +1,103 @@
+.footer {
+  background-color: $primary;
+  padding-top: $spacer*6;
+  a{
+    transition: 0.3s;
+    &:hover{
+      color:gold;
+    }
+  }
+  .footerMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footerLink{
+    display: flex;
+    column-gap: $spacer*6;
+  }
+  .social{
+    display: flex;
+    column-gap: $spacer*4;
+  }
+  .socialBtn img{
+    width: 48px;
+    transition: 0.3s;
+    &:hover{
+      opacity:0.5;
+    }
+  }
+  .contact{
+    padding: $spacer*4.5 0px $spacer*4 0px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  .contactInfo{
+      display: flex;
+      align-items: center;
+      font-size: $font-36;
+      span{
+        padding-right: $spacer*2.75;
+      }
+  }
+  .color{
+    color: #FFFFFF;
+  }
+  .footerCopyright{
+    display: flex;
+    justify-content: space-between;
+    padding: $spacer*4 0px;
+    ul{
+      display: flex;
+      justify-content: space-between;
+      column-gap: $spacer*6;
+    }
+  }
+  .copyrightInfo{
+    color: #FFFFFF;
+  }
+  .copyrightBtn{
+    font-size: $font-14;
+  }
+  }
+  
+  @include mobile{
+    .footer{
+      padding-top: 0px;
+      .footerLink{
+        display: none;
+      }
+      .contact{
+        padding: 0px;
+        border-bottom:none;
+      }
+      .contactInfo{
+        font-size: $font-base;
+      }
+      .social{
+        column-gap: $spacer;
+      }
+      .socialBtn img{
+        width: 24px;
+      }
+      .sm-rr-jcsb-aifs{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: $spacer*3 0px;
+        border-bottom: 1px solid #FFFFFF;
+      }
+      .footerCopyright{
+        flex-direction: column;
+        row-gap: $spacer;
+        padding: $spacer*3 0px;
+        ul{
+          flex-direction: column;
+          row-gap: $spacer;
+        }
+      }
+      .copyrightBtn{
+        font-size: $font-base;
+      }
+    }
+  }
